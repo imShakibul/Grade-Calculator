@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Sheet Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grade Sheet Calculator</h1>
+        <p class="testing-message">This website is now testing. If you face any issues, please contact <a href="mailto:imshakibul@gmail.com">imshakibul@gmail.com</a>.</p>
+    </header>
+    <main>
+        <section class="input-section">
+            <h2>Student Information</h2>
+            <div class="user-info">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" placeholder="Enter your name" required>
+            </div>
+            <div class="user-info">
+                <label for="studentId">ID:</label>
+                <input type="text" id="studentId" placeholder="Enter your ID" required>
+            </div>
+            <h2>Subjects</h2>
+            <div id="subjectContainer"></div>
+            <div class="btn-container">
+                <button onclick="addSubject()">Add Subject</button>
+                <button onclick="calculateCGPA()">Calculate CGPA</button>
+            </div>
+        </section>
+        <section id="resultContainer" class="result-section"></section>
+    </main>
+    <footer>
+        <p>Created by Shakib Islam | American International University-Bangladesh (AIUB)</p>
+    </footer>
+
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
