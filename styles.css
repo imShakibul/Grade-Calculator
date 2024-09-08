@@ -5,6 +5,9 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Header Styling */
@@ -13,6 +16,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 header h1 {
@@ -231,6 +235,7 @@ footer a:hover {
 
     .subject-entry input {
         margin-bottom: 10px;
+        width: 100%;
     }
 
     .btn-container {
@@ -243,5 +248,20 @@ footer a:hover {
         width: 100%;
         max-width: 300px;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer, .input-section, .result-section {
+        padding: 10px;
+    }
+
+    header h1, .result-section h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 16px;
     }
 }
